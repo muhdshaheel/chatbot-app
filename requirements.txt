@@ -1,6 +1,5 @@
 streamlit
 wikipedia
 wolframalpha
-pyttsx3
 SpeechRecognition
-pyaudio
+
