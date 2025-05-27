@@ -1,7 +1,5 @@
 streamlit
 wikipedia
 wolframalpha
+gtts
 SpeechRecognition
-sounddevice
-pyttsx3
-gTTS
