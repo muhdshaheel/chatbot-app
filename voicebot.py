@@ -1,18 +1,22 @@
-# streamlit_app.py
+# voicebot.py
+
 import streamlit as st
 import wikipedia
 import wolframalpha
-import pyttsx3
 from gtts import gTTS
-import tempfile
 import speech_recognition as sr
+import tempfile
 import os
 
-# === Initialize TTS Engine ===
+# === TTS Function using gTTS ===
 def SpeakText(command):
-    engine = pyttsx3.init()
-    engine.say(command)
-    engine.runAndWait()
+    try:
+        tts = gTTS(text=command, lang='en')
+        with tempfile.NamedTemporaryFile(delete=False, suffix=".mp3") as fp:
+            tts.save(fp.name)
+            st.audio(fp.name)
+    except Exception as e:
+        st.warning("Audio playback failed.")
 
 # === Search Function ===
 def search(query, app_id):
