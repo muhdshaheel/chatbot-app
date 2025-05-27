@@ -2,5 +2,4 @@ streamlit
 wikipedia
 wolframalpha
 SpeechRecognition
-pyttsx3
 sounddevice
