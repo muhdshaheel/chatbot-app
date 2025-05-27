@@ -3,7 +3,6 @@ import streamlit as st
 import wikipedia
 import wolframalpha
 import pyttsx3
-import espeak
 import speech_recognition as sr
 import os
 
