@@ -3,7 +3,7 @@
 import streamlit as st
 import wikipedia
 import wolframalpha
-import pyttsx3
+#import pyttsx3
 import speech_recognition as sr
 import os
 
