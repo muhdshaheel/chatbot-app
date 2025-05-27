@@ -4,3 +4,4 @@ wolframalpha
 SpeechRecognition
 sounddevice
 pyttsx3
+gTTS
