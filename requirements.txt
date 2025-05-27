@@ -4,4 +4,3 @@ wolframalpha
 SpeechRecognition
 sounddevice
 pyttsx3
-python-espeak
