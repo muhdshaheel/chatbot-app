@@ -3,4 +3,3 @@ wikipedia
 wolframalpha
 SpeechRecognition
 sounddevice
-pyttsx3
