@@ -22,6 +22,7 @@ def SpeakText(command):
 def search(query, app_id):
     try:
         client = wolframalpha.Client(app_id)
+        #id = (ULVYEJ-KXH8TGLUR9)
         res = client.query(query)
         answer = next(res.results).text
         st.success(f"WolframAlpha Answer: {answer}")
@@ -54,7 +55,7 @@ def listen_voice():
 
 # === Streamlit UI ===
 st.title("🤖 Voice/Text Intelligent Search Assistant")
-st.markdown("**Developers:** Shaheel, Ashiqu, Hunais | Data Science @iPECsolutions.com")
+st.markdown("**Developers:** Muhammed Shaheel | Data Science @iPECsolutions.com")
 
 st.markdown("Enter your query below or use your voice:")
 
